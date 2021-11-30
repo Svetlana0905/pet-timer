@@ -21,7 +21,7 @@ function App() {
   const [titleMinutes, setTitleMinutes] = useState('минут');
   const [titleSec, setTitleSec] = useState('секунд');
   const [disabledBtn, setDisabledBtn] = useState(false);
-  const [colorText, setColorText] = useState('get-time__text-red');
+  const [colorText, setColorText] = useState('get-time__text red');
 
   function getMounth(event) {
     let mounth = +event.target.value;
