@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/pet-timer/static/css/main.b6d6712a.chunk.css",
+    "main.js": "/pet-timer/static/js/main.f9c2e1a5.chunk.js",
+    "main.js.map": "/pet-timer/static/js/main.f9c2e1a5.chunk.js.map",
+    "runtime-main.js": "/pet-timer/static/js/runtime-main.7e901f3a.js",
+    "runtime-main.js.map": "/pet-timer/static/js/runtime-main.7e901f3a.js.map",
+    "static/js/2.2bbcf210.chunk.js": "/pet-timer/static/js/2.2bbcf210.chunk.js",
+    "static/js/2.2bbcf210.chunk.js.map": "/pet-timer/static/js/2.2bbcf210.chunk.js.map",
+    "index.html": "/pet-timer/index.html",
+    "static/css/main.b6d6712a.chunk.css.map": "/pet-timer/static/css/main.b6d6712a.chunk.css.map",
+    "static/js/2.2bbcf210.chunk.js.LICENSE.txt": "/pet-timer/static/js/2.2bbcf210.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/pet-timer/static/media/bg.a6aa03c9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e901f3a.js",
+    "static/js/2.2bbcf210.chunk.js",
+    "static/css/main.b6d6712a.chunk.css",
+    "static/js/main.f9c2e1a5.chunk.js"
+  ]
+}
