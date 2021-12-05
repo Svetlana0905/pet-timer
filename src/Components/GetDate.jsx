@@ -1,13 +1,14 @@
+import { calendar } from '../data';
+
 export const GetDate = (props) => {
 
    let colorText = props.date.colortext,
       getYears = props.date.getyears,
       getMounth = props.date.getmounth,
-      call = props.date.arr,
       getDays = props.date.getdays,
       daysInMounth = props.date.daysinmounth,
-      disabledBtn = props.date.disabledbtn,
-      timeCount = props.date.timecount;
+      startCount = props.date.startCount,
+      objectData = Object.keys(calendar);
 
    return (
       <>
@@ -20,14 +21,14 @@ export const GetDate = (props) => {
                   <option value='2022'>2022</option>
                </select>
                <select name='mounth' onChange={getMounth} className='get-time__select'>
-                  {call.map((item, index) => <option className='option' key={index} value={index}>{item[0]}</option>)}
+                  {objectData.map((item, index) => <option className='option' key={index} value={index}>{item}</option>)}
                </select>
                <select name='day' onChange={getDays} className='get-time__select'>
                   {daysInMounth.map((item, index) => <option key={index} value={index}>{item}</option>)}
                </select>
             </div>
          </div>
-         <button type='button' disabled={disabledBtn} className='get-time__button' onClick={timeCount}>Start</button>
+         <button type='button' className='get-time__button' onClick={startCount}>Start</button>
       </>
    )
 }

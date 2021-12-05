@@ -1,34 +1,30 @@
 export const TimeCount = (props) => {
 
    let countDay = props.counttime.countday,
-      titleDay = props.counttime.titleday,
       countHour = props.counttime.countour,
-      titleHour = props.counttime.titlehour,
       countMinutes = props.counttime.countminutes,
-      titleMinutes = props.counttime.titleminutes,
-      countSec = props.counttime.countsec,
-      titleSec = props.counttime.titlesec;
+      countSec = props.counttime.countsec;
 
    return (
       <div className='time-count'>
          <div className="time-count__item time-count__days">
             <div className="time-count__val">{countDay}</div>
-            <span className="time-count__text">{titleDay}</span>
+            <span className="time-count__text">Дни</span>
          </div>
          <div className="time-count__separator">:</div>
          <div className="time-count__item time-count__hours">
             <div className="time-count__val">{countHour}</div>
-            <span className="time-count__text">{titleHour}</span>
+            <span className="time-count__text">Часы</span>
          </div>
          <div className="time-count__separator">:</div>
          <div className="time-count__item time-count__minutes">
             <div className="time-count__val">{countMinutes}</div>
-            <span className="time-count__text">{titleMinutes}</span>
+            <span className="time-count__text">Минуты</span>
          </div>
          <div className="time-count__separator">:</div>
          <div className="time-count__item time-count__seconds">
             <div className="time-count__val">{countSec}</div>
-            <span className="time-count__text">{titleSec}</span>
+            <span className="time-count__text">Секунды</span>
          </div>
       </div>
    )
