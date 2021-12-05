@@ -1,6 +1,6 @@
 import './style/App.scss';
 import { calendar } from './data';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { TimeCount } from './Components/TimeCount';
 import { GetDate } from './Components/GetDate';
@@ -18,12 +18,11 @@ function App() {
   const [countSec, setCountSec] = useState('00');
   const [colorText, setColorText] = useState('get-time__text red');
   const [idInterval, setIdInterval] = useState(null);
-
+  const [userDates, setuserDates] = useState();
 
   function getMounthDays(event) {
-    let mounth = +event.target.value;
-    setGetMounth(mounth);
-    let days = call[mounth][1];
+    setGetMounth(+event.target.value);
+    let days = call[getMounth][1];
     let arr = [];
     for (let i = 0; i < days; i++) {
       arr.push(i + 1);
@@ -31,19 +30,20 @@ function App() {
     setDaysInMounth(arr);
   }
   function getDays(event) {
-    let day = +event.target.value + 1;
-    setGetDay(day);
+    setGetDay(+event.target.value + 1);
   }
   function getYears(event) {
-    let year = +event.target.value;
-    setGetYear(year);
+    setGetYear(+event.target.value);
   }
 
+  useEffect(() => {
+    setuserDates(new Date(getYear, getMounth, getDay));
+  }, [getDay, getMounth, getYear]);
+
+
   function startCount() {
-    let userDate = new Date(getYear, getMounth, getDay);
     function start() {
-      let nowDate = new Date();
-      let leftUntil = userDate - nowDate;
+      let leftUntil = userDates - new Date();
       if (leftUntil > 0) {
         setColorText('get-time__text');
         let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
