@@ -2,12 +2,11 @@ import { calendar } from '../data';
 
 export const GetDate = (props) => {
 
-   let colorText = props.date.colortext,
-      getYears = props.date.getyears,
+   let getYears = props.date.getyears,
       getMounth = props.date.getmounth,
+      colorText = props.date.colortext,
       getDays = props.date.getdays,
       daysInMounth = props.date.daysinmounth,
-      startCount = props.date.startCount,
       objectData = Object.keys(calendar);
 
    return (
@@ -28,7 +27,6 @@ export const GetDate = (props) => {
                </select>
             </div>
          </div>
-         <button type='button' className='get-time__button' onClick={startCount}>Start</button>
       </>
    )
 }
