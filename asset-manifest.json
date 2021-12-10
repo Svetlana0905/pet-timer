@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pet-timer/static/css/main.d4998438.chunk.css",
-    "main.js": "/pet-timer/static/js/main.1ac7a33b.chunk.js",
-    "main.js.map": "/pet-timer/static/js/main.1ac7a33b.chunk.js.map",
+    "main.js": "/pet-timer/static/js/main.f15b0fa9.chunk.js",
+    "main.js.map": "/pet-timer/static/js/main.f15b0fa9.chunk.js.map",
     "runtime-main.js": "/pet-timer/static/js/runtime-main.7e901f3a.js",
     "runtime-main.js.map": "/pet-timer/static/js/runtime-main.7e901f3a.js.map",
     "static/js/2.2bbcf210.chunk.js": "/pet-timer/static/js/2.2bbcf210.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.7e901f3a.js",
     "static/js/2.2bbcf210.chunk.js",
     "static/css/main.d4998438.chunk.css",
-    "static/js/main.1ac7a33b.chunk.js"
+    "static/js/main.f15b0fa9.chunk.js"
   ]
 }
